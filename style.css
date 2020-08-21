@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+}
+@media screen and (max-width:1024px){
+    
+}
+.log{
+    color: rgb(226, 226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font: 20px;
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+      width: 60%;
+  }  
+}
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 40%;
+}
+@media screen and (max-width:1024px){
+    .body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position:absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in ;
+    }  
+  }
+.nav-links a{
+    color: rgb(226, 226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li{
+    opacity: 0;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger{
+    display: block;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226,226);
+    margin: 5px;
+
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.slides-container{
+    height: 100;
+}
+.slide-image{
+    height: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.slide-image img{
+    width: 70%;
+    height: 70%;   
+}
+.next-btn,
+.prev-btn{
+    background:transparent;
+    padding: 16px;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(#5d4954, #5d4954, #5d4954, #5d4954);
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
+}
+.next-btn{
+    left: 87%;
+}
+.next-btn:hover,
+.prev-btn:hover{
+    background: mistyrose;
+}
+.text-par{
+    text-align:left;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(100%);
+    font-weight: bold;
+    background-image: linear-gradient(transparent 10%, #000000 30%, #000000 70%, transparent 10%);
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+}
+.text-par > *{
+    color: black;
+} 
+
+/*navigation-dots styling*/
+.single-dots{
+    background-color: #333333;
+    margin-bottom: 50%;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 400ms;
+}
+.navigation-dots{
+   display: flex;
+   left: 60%;
+   top: 53%;
+   position: absolute;
+   transform: translateX(90%);
+   transform: translateY(90%);
+}
+.single-dots.active{
+    background-color: lightgray;
+}
+
+.single-dots{
+  margin-bottom: 50%;
+  margin-top: 50%;
+  margin-right: 16px;
+}
+#logo{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    transform: translate(-10%,-50%);
+}
+#logo path :nth-child(1){
+    stroke-dasharray: 50;
+    
+}
+#logo path :nth-child(2){
+    stroke-dasharray: 130px;
+}
+#logo path :nth-child(3){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(4){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(5){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(6){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(7){
+    stroke-dasharray: 130px;
+}
+#logo path :nth-child(8){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(9){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(10){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(11){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(12){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(13){
+    stroke-dasharray: 130px;
+}
+#logo path :nth-child(14){
+
+    stroke-dasharray: 130px;
+}
+#logo path :nth-child(15){
+    stroke-dasharray: 130px;
+
+}
+#logo path :nth-child(16){
+    stroke-dasharray: 130px;
+
+}
+html{
+    background:url(images/image4.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+}
+.btn{
+    text-align: center;
+    margin-right: -20%;
+    margin-top: 10%;
+    
+}
+.btn1{
+    border: 1px solid   #030303;
+    background: none;
+    padding: 20px 40px;
+    font-size: 30px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    color: black;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1:hover{
+    color: azure;
+}
+btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #5d4954;
+    z-index: -1;
+    transition: 1s;
+}
+.btn1:hover::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
